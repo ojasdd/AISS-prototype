@@ -4,8 +4,8 @@ const TimetablePage = () => {
   const [timetable, setTimetable] = useState([]);
 
   useEffect(() => {
-    // Fetch the timetable data from the JSON file
-    fetch("http://localhost:8000/exports/timetable.json")
+    // Fetch the timetable data from the deployed backend
+    fetch("https://aiss-prototype-backend.onrender.com/exports/timetable.json")
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to fetch timetable data");

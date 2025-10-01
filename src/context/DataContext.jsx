@@ -41,7 +41,7 @@ export function DataProvider({ children }) {
   const sendAllToBackend = async (navigate) => {
     try {
       const dataset = { faculties, courses, classrooms, timeslots };
-      const response = await axios.post('http://localhost:8000/upload-dataset', dataset, {
+      const response = await axios.post('http://aiss-prototype-backend.onrender.com/upload-dataset', dataset, {
         headers: {
           'Content-Type': 'application/json',
         },

@@ -15,7 +15,7 @@ const SuccessPage = () => {
     setSuccess(false);
 
     try {
-      const response = await axios.post('http://localhost:8000/timetable/generate');
+      const response = await axios.post('https://aiss-prototype-backend.onrender.com/timetable/generate');
       console.log(response.data);
       setSuccess(true);
       
